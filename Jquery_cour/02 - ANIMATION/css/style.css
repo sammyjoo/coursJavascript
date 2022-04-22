@@ -1,0 +1,36 @@
+fieldset {
+    width: 800px;
+    margin: 0 auto;
+}
+
+legend {
+    font-family: 25px Arial, Helvetica, sans-serif;
+}
+
+ul.hover_block li {
+    list-style-type: none;
+    float: left;
+    background-color: whitesmoke;
+    padding: 10px;
+    position: relative;
+    margin-right: 20px;
+}
+
+ul.hover_block li a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+    width: 260px;
+    padding: 16px;
+    color: black;
+    font-family: 15px Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+ul.hover_block li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+}

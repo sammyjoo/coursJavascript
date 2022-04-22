@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>01 - entrainement - jQuery</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="display-4 text-center">entrainement jQuery - les animations</h1>
+
+
+        <h2>
+            les animations "FADE"
+        </h2>
+
+            <button id="fadeIn" class="btn btn-info">FADE APPARITION</button>
+
+            <div id="rouge" style="display: none;" class="col-md-2 bg-danger p-5 m-1"></div>
+            <div id="bleu" style="display: none;"  class="col-md-2 bg-primary p-5 m-1"></div>
+            <div id="vert" style="display: none;"  class="col-md-2 bg-success p-5 m-1"></div>
+            <hr>
+            <button id="fadeOut" class="btn btn-info">off</button>
+            <div id="rougeoff"  class="col-md-2 bg-danger p-5 m-1"></div>
+            <div id="bleuoff"   class="col-md-2 bg-primary p-5 m-1"></div>
+            <div id="vertoff"   class="col-md-2 bg-success p-5 m-1"></div>
+
+            <hr>
+            <button id="fadeToggle" class="btn btn-info">TOGGLE</button>
+            <div id="rougetgl"  class="col-md-2 bg-danger p-5 m-1"></div>
+            <div id="bleutgl"   class="col-md-2 bg-primary p-5 m-1"></div>
+            <div id="verttgl"   class="col-md-2 bg-success p-5 m-1"></div>
+            <hr>
+
+            <button id="fadeTo" class="btn-info">FADE OPACITE ON</button>
+            <button id="fadeTo2" class="btn btn-info">FADE OPACITE OFF</button>
+            
+            <form action="" id="formulaire" class="col-md-4" style="opacity: 0;">
+            <label for="pseudo">Pseudo</label>
+            <input type="text" class="form-control" id="pseudo">
+
+            <label for="password">Mot de passe</label>
+            <input type="password" class="form-control" id="passwrd">
+            </form>
+
+            <div id="jaune2" class="col-md-2 p-5 m-1 bg-warning"></div>
+            <div id="gris2" class="col-md-2 p-5 m-1 bg-secondary"></div>
+            <hr>
+
+            <h2>Les animations "SLIDE</h2>
+  
+            <div id="barre" class="col-md-5 border border-dark bg-secondary text-center" style="cursor: pointer;">Cliquez pour descendre le rideau</div>
+            
+
+            <div id="rideau" style="display: none; height: 300px;" class="col-md-5 border border-dark bg-secondary text-center" ></div>
+            <br><br>
+            <div id="barre2" class="col-md-5 border border-dark bg-warning text-center" style="cursor: pointer;">Cliquez pour descendre le rideau</div>
+            
+
+            <div id="rideau2" style="height: 300px;" class="col-md-5 border border-dark bg-warning text-center" ></div>
+            <br><br>
+            
+            <div id="barre3" class="col-md-5 border border-dark bg-success text-center" style="cursor: pointer;">Cliquez pour descendre le rideau</div>
+
+            <div id="rideau3" style="height: 300px;" class="col-md-5 border border-dark bg-success text-center" > ... et le rideau apparait</div>
+
+            <hr>
+
+            <h2>les animations "ANIMATE"</h2>
+
+            <button id="btn-simple" class="btn btn-info mb-2"> simple</button>
+
+            <div id="simple" class="col-md-3 p-5 bg-success" style="position: relative;"> Animation simple </div>
+            <br><br>
+            <button id="btn-simple2" class="btn btn-info mb-2"> cache</button>
+
+            <div id="simple2" class="col-md-3 p-5 bg-warning" style="position: relative;"> Animation double </div>
+            <br><br>
+
+            <button id="btn-simple3" class="btn btn-info mb-2"> simple</button>
+
+            <div id="simple3" class="col-md-3 p-5 bg-danger" style="position: relative;"> Animation double2 </div>
+
+            <br><br>
+
+            <button id="btn-agg" class="btn btn-info mb-2"> grandir</button>
+
+            <div id="agg" class="p-5 mb-2 text-success" style="position: relative; width: 325px; background: lightskyblue;"> animation agrandissement </div>
+            <br><br>
+
+
+            <button id="btn-etape" class="btn btn-info mb-2"> etape</button>
+
+            <div id="etape" class="p-5 mb-2" style="position: relative; width: 200px; background: lightsalmon;"> disparition rectangle </div>
+
+            <hr>
+
+            <h2>si tu cliques sur le carré, <br>le titre disparait</h2>
+            <br>
+
+            <div id="div" style="border: 3px solid black; width:150px; height: 150px; background: lightgreen;"></div>
+
+            <br>
+
+            <div id="div2">
+                <img src="img/img4.jpg" alt="" style="height: 150px; width: 150px;">
+            </div>
+
+            <br>
+            <h3>connexion</h3>
+            <form action="" id="formulaire2" class="col-md-4">
+                <label for="pseudo">Pseudo</label>
+                <input type="text" class="form-control" id="pseudo2">
+    
+                <label for="password">Mot de passe</label>
+                <input type="password" class="form-control" id="passwrd2">
+                </form>
+
+                <br><br>
+
+                <button id="interupteur" class="btn btn-dark">ON/OFF</button>
+                <h2 id="on-off">Apparation / disparition au click 
+                    <img src="img/img4.jpg" style="height: 500px;" alt="">
+                </h2>
+                <br><br>
+            
+    </div>
+    
+</body>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <h1></h1>
+    <p>Ce JQUERY est mal chargé</p>
+
+
+
+   <!-- <script src="js/main.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('p').html('Ce jquery est bien chargé');
+            $('h1').html('Bonjour world');
+        })
+    </script>
+</body>
+</html>

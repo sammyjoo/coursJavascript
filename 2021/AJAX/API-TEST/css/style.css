@@ -1,0 +1,13 @@
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+h1 {
+    color: indianred;
+}
+article {
+    border: 1px solid grey;
+}
+h2 {
+    color: indianred;
+}

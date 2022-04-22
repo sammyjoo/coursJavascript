@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 - animate() - jQuery</title>
+
+    <style>
+        header, section { margin: 0 auto; width: 700px; }
+        section {background: green; min-height: 550px; }
+        h1 { border: 1px solid black; text-align: center; }
+        #div_vert{ width: 100px; height: 100px; background: lightblue; margin: 50px auto; text-align: center;}
+    </style>
+</head>
+<body>
+    <header></header>
+    <section>
+        <article>
+            <h1>JQUERY - animate</h1>
+        </article>
+        <article>
+            <div id="div_vert">Contenu</div>
+        </article>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#div_vert').animate({
+                marginTop: '20px',
+                width: '500px',
+                height: '500px'
+                                    }, 2000)//le temps de transition en millisecondes 
+        })
+    </script>
+</body>
+</html>

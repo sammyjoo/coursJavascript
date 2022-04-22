@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculatrice simple en JS</title>
+</head>
+
+<body>
+    <h1>Calculatrice simple en JS</h1>
+    <table>
+        <tr>
+            <td colspan="5"><input type="text" name="" id="out" value=""></td>
+        </tr>
+        <tr>
+            <td><button onclick="action(1)">1</button></td>
+            <td><button onclick="action(2)">2</button></td>
+            <td><button onclick="action(3)">3</button></td>
+            <td><button onclick="action(4)">4</button></td>
+            <td><button onclick="action(5)">5</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="action(6)">6</button></td>
+            <td><button onclick="action(7)">7</button></td>
+            <td><button onclick="action(8)">8</button></td>
+            <td><button onclick="action(9)">9</button></td>
+            <td><button onclick="action(0)">0</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="action('+')">+</button></td>
+            <td><button onclick="action('-')">-</button></td>
+            <td><button onclick="action('*')">*</button></td>
+            <td><button onclick="action('/')">/</button></td>
+            <td><button onclick="calcul()">=</button></td>
+        </tr>
+        <tr>
+            <td colspan="5"><a href="index.html"><button style="width: 100%;">Effacer</button></a></td>
+        </tr>
+    </table>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

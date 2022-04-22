@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TP JAVASCRIPT</title>
+
+
+</head>
+
+<body>
+
+    <form>
+        <fieldset>
+            <legend> Calculatrice</legend>
+
+            <input id="calcule1" class="form-control form-control-sm" type="text" placeholder="10"
+                aria-label=".form-control-sm example">
+
+            <select name="utilise" id="utilise">
+                <option value="multiplication">*</option>
+                <option value="soustraction">-</option>
+                <option value="division">/</option>
+            </select>
+
+            <input id="calcule2" class="form-control form-control-sm" type="text" placeholder="10"
+            aria-label=".form-control-sm example">
+
+        </fieldset>
+
+
+        <p>
+            <input type="submit" value="Envoyer" onclick="test();">
+        </p>
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+    <script>
+function test() {
+        var A = document.getElementById("calcule1").value;
+        var B = document.getElementById("calcule2").value;
+        var select = document.getElementById("utilise").value;
+
+
+        switch (select) {
+  case "multiplication":
+    alert(A * B);
+    break;
+    case "soustraction":
+    alert(A - B);
+    break;
+    case "division":
+    alert(A / B);
+    break;
+}
+}
+
+
+    </script>
+
+
+</body>

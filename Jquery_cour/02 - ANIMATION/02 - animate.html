@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title> 02 - animate() - jQuery</title>
+</head>
+
+<body>
+
+    <fieldset>
+        <ul class="hover_block">
+            <legend>Portfolio</legend>
+            <li>
+                <h2>Projet 1</h2> <a href=""> <img src="img/img2.jpg" alt="">1. Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit. Dolores facilis quisquam magni obcaecati perspiciatis architecto consectetur aspernatur odit
+                    asperiores vel officiis repellat quam, soluta aut, amet corrupti esse vero incidunt.</a>
+            </li>
+            <li>
+                <h2>Projet 2</h2> <a href=""> <img src="img/img3.jpg" alt="">2. Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit. Dolores facilis quisquam magni obcaecati perspiciatis architecto consectetur aspernatur odit
+                    asperiores vel officiis repellat quam, soluta aut, amet corrupti esse vero incidunt.</a>
+            </li>
+            <li>
+                <h2>Projet 3</h2> <a href=""> <img src="img/img4.jpg" alt="">3. Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit. Dolores facilis quisquam magni obcaecati perspiciatis architecto consectetur aspernatur odit
+                    asperiores vel officiis repellat quam, soluta aut, amet corrupti esse vero incidunt.</a>
+            </li>
+            <li>
+                <h2>Projet 4</h2> <a href=""> <img src="img/img5.jpg" alt="">4. Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit. Dolores facilis quisquam magni obcaecati perspiciatis architecto consectetur aspernatur odit
+                    asperiores vel officiis repellat quam, soluta aut, amet corrupti esse vero incidunt.</a>
+            </li>
+            <li>
+                <h2>Projet 5</h2> <a href=""> <img src="img/img6.jpg" alt="">5. Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit. Dolores facilis quisquam magni obcaecati perspiciatis architecto consectetur aspernatur odit
+                    asperiores vel officiis repellat quam, soluta aut, amet corrupti esse vero incidunt.</a>
+            </li>
+        </ul>
+    </fieldset>
+
+    <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('ul.hover_block li').hover(function() {
+                $(this).find('img').animate({opacity: "0.2"},{duration: 200})
+            }, function(){
+                $(this).find('img').animate({opacity: "1"},{duration: 500})
+            })
+        })
+    </script>
+
+
+</body>
+
+</html>

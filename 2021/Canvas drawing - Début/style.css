@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    text-align: center;
+    padding: 25px;
+    background-color: sienna;
+}
+
+.tools {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.tools .color-field {
+    height: 40px;
+    width: 40px;
+    min-height: 40px;
+    min-width: 40px;
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid white;
+    align-self: center;
+    margin: 0 15px;
+}
+
+.tools i {
+    align-self: center;
+    font-size: 35px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.color-field {
+    height: 50px;
+}
+
+.color-field, .pen-range {
+    align-self: center;
+    margin: 0 15px;
+}
+
+.color-picker {
+    width: 70px;
+    height: 70px;
+    border-width: 0;
+}
+
+canvas {
+    box-shadow: -3px -2px 9px 6px black;
+    cursor: pointer;
+}

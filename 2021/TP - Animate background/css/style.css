@@ -1,0 +1,91 @@
+#background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation-timing-function: linear;
+    z-index: 1;
+    background-position: center;
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvE5zt2JYx3sew5Ih-jpPtReDwM33ut23ptfhyZ972i9ij-2Pkiw); */
+    background-image: url(../img/background.jpg);
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#filtr {
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+    position: absolute;
+    /* background-color: black; */
+}
+
+#content {
+    top: 50%;
+    z-index: 3;
+    width: 100%;
+    color: white;
+    font-size: 150%;
+    position: absolute;
+    text-align: center;
+    transform: translate(0%, -50%);
+}
+
+span {
+    color: #ba3737;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+td {
+    width: 30px;
+    height: 30px;
+}
+
+@keyframes left {
+    from {
+        background-position: 0px 0px;
+    }
+
+    to {
+        background-position: -100% 0px;
+    }
+}
+
+@keyframes right {
+    from {
+        background-position: 0px 0px;
+    }
+
+    to {
+        background-position: 100% 0px;
+    }
+}
+
+@keyframes up {
+    from {
+        background-position: 0px 0px;
+    }
+
+    to {
+        background-position: 0% -300%;
+    }
+}
+
+@keyframes down {
+    from {
+        background-position: 0px 0px;
+    }
+
+    to {
+        background-position: 0% 300%;
+    }
+}

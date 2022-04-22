@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{margin:0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+        fieldset {margin: 30px 0; }
+        #info {position: fixed; background: pink; color: white; width: 100%; display: block; padding: 5px; margin-bottom: 30px;}
+        .titre{font-weight: bold; padding: 10px;margin: 10px;}
+        .zone1, .zone2, .zone3, .zone4, .zone5, .zone6, .zone7, .zone8, .zone9{
+            background: plum; padding: 20px; margin: 20px;}
+            input, textarea, select{width: 100%; padding: 5px;}
+        
+    </style>
+    <title>evenements - jQuery</title>
+</head>
+<body>
+
+    <div id="info">je ne fais rien</div> <br><br>
+    <fieldset>
+        <h1>
+            1./ MOUSEOVER - SURVOLER LA ZONE 1
+        </h1>
+        <div class="zone1">zone1</div>
+    </fieldset>
+    
+    
+    <fieldset>
+        <h1>
+            2./ MOUSEOUT - QUITTER LA ZONE 2
+        </h1>
+        <div class="zone2">zone2</div>
+    </fieldset>
+
+    <fieldset>
+        <h1>
+            3./ MOUSEENTER + MOUSELEAVE
+        </h1>
+        <div class="zone3">zone3</div>
+    </fieldset>
+
+    <fieldset>
+        <h1>
+            4./ CLICK 
+        </h1>
+        <div class="zone4">zone4</div>
+    </fieldset>
+
+    <fieldset>
+        <h1>
+            5./ DBLCLICK 
+        </h1>
+        <div class="zone5">zone5</div>
+    </fieldset>
+
+    <fieldset>
+        <h1>
+            6./ CONTEXTMENU - click droit
+        </h1>
+        <div class="zone6">zone6</div>
+    </fieldset>
+<form>
+    <fieldset>
+        <h1>
+            7./ BLUR 
+        </h1>
+        <input type="text" class="zone7" placeholder="ZONE7">
+    </fieldset>
+
+    <fieldset>
+        <h1>
+            8./ CHANGE 
+        </h1>
+        <select name="" id="" class="zone8">
+            <option disabled selected>zone8</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <h1>
+            9./ KEYDOWN 
+        </h1>
+        <textarea name="" id="" cols="30" rows="10" class="zone9"></textarea>
+    </fieldset>
+
+</form>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
